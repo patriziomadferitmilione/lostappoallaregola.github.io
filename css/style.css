@@ -296,7 +296,7 @@ body {
 
   .home-page-container {
     height: auto;
-   
+    overflow: hidden;
     padding-bottom: 10vh;
   }
 
