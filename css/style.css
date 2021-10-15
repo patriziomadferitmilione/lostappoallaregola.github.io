@@ -293,9 +293,10 @@ body {
 @media screen and (max-width: 375px) {
   /* home page */
 
+
   .home-page-container {
     height: auto;
-    overflow: hidden;
+   
     padding-bottom: 10vh;
   }
 
