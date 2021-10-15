@@ -267,21 +267,6 @@ body {
   text-decoration: none;
 }
 
-.single-pic-container a h1 {
-  border: 3px solid var(--primaryBlack);
-  margin: 1vh;
-  font-size: 4vh;
-  font-weight: 700;
-  width: 35vh;
-  height: 7vh;
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 2.5s ease;
-  border-radius: 5px;
-}
-
 .single-pic-container a h1:hover {
   background-color: var(--primaryColor);
 }
@@ -290,20 +275,21 @@ body {
 
 /* END OF FULL SITE */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   /* home page */
 
-
   .home-page-container {
-    height: auto;
+    height: 100vh;
     overflow: hidden;
     padding-bottom: 10vh;
   }
 
-  .title-container h1 {
+  .home-page-container .title-container h1 {
     font-size: 10vh;
     width: fit-content;
     margin-top: 10vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
     border: 5px solid var(--primaryBlack);
   }
 
@@ -321,6 +307,10 @@ body {
   }
 
   /* full site */
+  .navbar {
+    width: fit-content;
+  }
+
   #navbar-icon-home {
     font-size: 4vh;
     color: var(--primaryWhite);
@@ -349,19 +339,148 @@ body {
 
   .vino-brand h1 {
     color: var(--primaryBlue);
-    font-size: 5vh;
+    font-size: 8vh;
     font-weight: 700;
   }
 
   .carne-brand h1 {
     color: var(--primaryColor);
-    font-size: 5vh;
+    font-size: 6.5vh;
     font-weight: 700;
   }
 
   .formaggi-brand h1 {
     color: var(--primaryYellow);
+    font-size: 6vh;
+    font-weight: 700;
+  }
+
+  #navbarNav {
     font-size: 5vh;
+    justify-content: flex-end;
+  }
+
+  #navbarNav a {
+    color: var(--primaryWhite);
+  }
+
+  .header {
+    height: 82vh;
+    width: fit-content;
+  }
+
+  .vino-header {
+    height: 75.5vh;
+  }
+
+  .carne-header {
+    height: 77.4vh;
+  }
+
+  .header h1 {
+    font-size: 9vh;
+  }
+
+  .formaggi-header {
+    height: 78vh;
+  }
+
+  .formaggi-header h1 {
+    font-size: 10vh;
+    height: fit-content;
+  }
+
+  .gallery {
+    width: fit-content;
+  }
+
+  .single-pic-container {
+    right: 1.8vh;
+  }
+
+  .single-pic-container img {
+    height: 45vh;
+    max-width: 45vh;
+  }
+
+  .single-pic-container img:hover {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* home page */
+
+  .home-page-container {
+    height: 100vh;
+    overflow: hidden;
+    padding-bottom: 10vh;
+  }
+
+  .home-page-container .title-container h1 {
+    font-size: 8vh;
+    width: fit-content;
+    margin-top: 10vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    border: 5px solid var(--primaryBlack);
+  }
+
+  .buttons-container button {
+    font-size: 6vh;
+    width: 40vh;
+  }
+
+  .buttons-container #btn-1 {
+    width: 40vh;
+  }
+
+  .buttons-container #btn-3 {
+    width: 40vh;
+  }
+
+  /* full site */
+  #navbar-icon-home {
+    font-size: 5vh;
+    color: var(--primaryWhite);
+  }
+
+  #navbar-icon-vino {
+    font-size: 5vh;
+    color: var(--primaryBlue);
+  }
+
+  #navbar-icon-carne {
+    font-size: 5vh;
+    color: var(--primaryColor);
+  }
+
+  #navbar-icon-formaggi {
+    font-size: 5vh;
+    color: var(--primaryYellow);
+  }
+
+  .home-brand h1 {
+    color: var(--primaryWhite);
+    font-size: 5vh;
+    font-weight: 700;
+  }
+
+  .vino-brand h1 {
+    color: var(--primaryBlue);
+    font-size: 8vh;
+    font-weight: 700;
+  }
+
+  .carne-brand h1 {
+    color: var(--primaryColor);
+    font-size: 6vh;
+    font-weight: 700;
+  }
+
+  .formaggi-brand h1 {
+    color: var(--primaryYellow);
+    font-size: 6vh;
     font-weight: 700;
   }
 
@@ -380,15 +499,15 @@ body {
   }
 
   .vino-header {
-    height: 77.9vh;
+    height: 73vh;
   }
 
   .carne-header {
-    height: 77.9vh;
+    height: 75.4vh;
   }
 
   .formaggi-header {
-    height: 76.4vh;
+    height: 75vh;
   }
 
   .formaggi-header h1 {
@@ -396,8 +515,8 @@ body {
     height: fit-content;
   }
 
-  .single-pic-container {
-    right: 5vh;
+  .gallery {
+    width: fit-content;
   }
 
   .single-pic-container img:hover {
