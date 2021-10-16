@@ -26,12 +26,9 @@ body {
   justify-content: center;
 }
 
-.title-container h1 {
-  font-size: 15vh;
-  font-weight: 700;
-  border-top: 7px solid var(--primaryBlack);
-  border-bottom: 7px solid var(--primaryBlack);
-  color: var(--primaryBlack);
+.title-container img {
+  height: auto;
+  width: 200vh;
 }
 
 .title-container a {
@@ -46,45 +43,66 @@ body {
 
 .buttons-container button {
   font-size: 8vh;
-  border: 7px solid var(--primaryBlack);
   transition: all 2s ease;
 }
 
 .buttons-container #btn-1 {
   width: 45vh;
+  border: 7px solid var(--primaryWhite);
+}
+
+.buttons-container #btn-1 a {
+  color: var(--primaryWhite);
+  text-decoration: none;
+}
+
+.buttons-container #btn-2 a {
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+
+.buttons-container #btn-3 a {
+  color: var(--primaryYellow);
+  text-decoration: none;
+}
+
+.buttons-container #btn-4 a {
+  color: var(--primaryBlue);
+  text-decoration: none;
 }
 
 .buttons-container #btn-2 {
   width: 40vh;
+  border: 7px solid var(--primaryColor);
 }
 
 .buttons-container #btn-3 {
   width: 60vh;
+  border: 7px solid var(--primaryYellow);
+}
+
+.buttons-container #btn-4 {
+  border: 7px solid var(--primaryBlue);
 }
 
 .buttons-container #btn-1:hover {
-  background-color: var(--primaryWhite);
+  background-color: var(--primaryBlack);
   transform: scale(1.1);
 }
 
 .buttons-container #btn-2:hover {
-  background-color: var(--primaryColor);
+  background-color: var(--primaryBlack);
   transform: scale(1.1);
 }
 
 .buttons-container #btn-3:hover {
-  background-color: var(--primaryYellow);
+  background-color: var(--primaryBlack);
   transform: scale(1.1);
 }
 
 .buttons-container #btn-4:hover {
-  background-color: var(--primaryBlue);
+  background-color: var(--primaryBlack);
   transform: scale(1.1);
-}
-
-.buttons-container a {
-  color: var(--primaryBlack);
-  text-decoration: none;
 }
 
 /* END OF HOME PAGE */
@@ -119,30 +137,6 @@ body {
   color: var(--primaryYellow);
 }
 
-.home-brand h1 {
-  color: var(--primaryWhite);
-  font-size: 7vh;
-  font-weight: 700;
-}
-
-.vino-brand h1 {
-  color: var(--primaryBlue);
-  font-size: 7vh;
-  font-weight: 700;
-}
-
-.carne-brand h1 {
-  color: var(--primaryColor);
-  font-size: 7vh;
-  font-weight: 700;
-}
-
-.formaggi-brand h1 {
-  color: var(--primaryYellow);
-  font-size: 7vh;
-  font-weight: 700;
-}
-
 #navbarNav {
   font-size: 4vh;
   justify-content: flex-end;
@@ -155,7 +149,7 @@ body {
 /* header */
 
 .header {
-  height: 85vh;
+  height: 86vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -460,30 +454,6 @@ body {
     color: var(--primaryYellow);
   }
 
-  .home-brand h1 {
-    color: var(--primaryWhite);
-    font-size: 5vh;
-    font-weight: 700;
-  }
-
-  .vino-brand h1 {
-    color: var(--primaryBlue);
-    font-size: 8vh;
-    font-weight: 700;
-  }
-
-  .carne-brand h1 {
-    color: var(--primaryColor);
-    font-size: 6vh;
-    font-weight: 700;
-  }
-
-  .formaggi-brand h1 {
-    color: var(--primaryYellow);
-    font-size: 6vh;
-    font-weight: 700;
-  }
-
   #navbarNav {
     font-size: 5vh;
     justify-content: flex-end;
@@ -494,7 +464,8 @@ body {
   }
 
   .header {
-    height: 80vh;
+    background: url(../images/header-mobile.jpg) no-repeat center center fixed;
+    height: 85vh;
     width: 100%;
   }
 
