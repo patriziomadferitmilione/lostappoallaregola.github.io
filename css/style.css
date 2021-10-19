@@ -508,6 +508,7 @@ body {
   /* header */
 
   .header {
+    background: url(../images/header-mobile.jpg) center/cover fixed;
     height: 84vh;
     width: fit-content;
   }
