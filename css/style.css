@@ -418,6 +418,211 @@ body {
 
 /* END OF FULL SITE */
 
+@media screen and (max-width: 720px) {
+  .home-page-container {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .home-page-container .title-container img {
+    width: 43vh;
+  }
+
+  .home-page-container .title-container {
+    margin-bottom: 3vh;
+  }
+
+  .buttons-container .col {
+    margin-bottom: 3vh;
+  }
+
+  .buttons-container #btn-1 {
+    width: 40vh;
+  }
+
+  .buttons-container #btn-2 {
+    width: 40vh;
+  }
+
+  .buttons-container #btn-3 {
+    width: 40vh;
+  }
+
+  .buttons-container #btn-3 a {
+    font-size: 6vh;
+  }
+
+  .buttons-container #btn-4 {
+    width: 40vh;
+  }
+
+  /* full site */
+
+  /* navbar  */
+
+  #navbar-icon-home {
+    font-size: 4vh;
+  }
+
+  #navbar-icon-vino {
+    font-size: 4vh;
+  }
+
+  #navbar-icon-carne {
+    font-size: 4vh;
+  }
+
+  #navbar-icon-formaggi {
+    font-size: 4vh;
+  }
+
+  .home-brand img {
+    width: 43vh;
+  }
+
+  .vino-brand img {
+    width: 43vh;
+  }
+
+  .carne-brand img {
+    width: 43vh;
+  }
+
+  .formaggi-brand img {
+    width: 43vh;
+  }
+
+  #navbarNav {
+    font-size: 3vh;
+    justify-content: flex-end;
+  }
+
+  #navbarNav a {
+    color: var(--primaryColor);
+  }
+
+  /* header */
+
+  .header {
+    height: 88vh;
+    width: fit-content;
+  }
+
+  .vino-header {
+    height: 87vh;
+  }
+
+  .carne-header {
+    height: 87vh;
+  }
+
+  .carne-header h1 {
+    font-size: 12vh;
+  }
+
+  .header h1 {
+    font-size: 12vh;
+  }
+
+  .formaggi-header {
+    height: 87vh;
+  }
+
+  .formaggi-header h1 {
+    font-size: 8.5vh;
+  }
+
+  /* meat */
+
+  .meat-starter h1 {
+    margin-top: 4vh;
+    font-size: 5vh;
+  }
+
+  .meat-container .card {
+    height: fit-content;
+    width: 40vh;
+    border-radius: 5px;
+    left: 2vh;
+  }
+
+  .meat-container img {
+    max-height: 40vh;
+    max-width: 38vh;
+  }
+
+  .meat-text {
+    font-size: 4vh;
+  }
+
+  /* wine */
+
+  .wine-starter h1 {
+    font-size: 7vh;
+  }
+
+  .wine-starter h5 {
+    font-size: 3vh;
+  }
+
+  .wine-container .card {
+    height: fit-content;
+    width: 40vh;
+    border-radius: 5px;
+  }
+
+  .wine-container img {
+    max-height: 40vh;
+    max-width: 38vh;
+  }
+
+  .wine-text {
+    font-size: 4vh;
+  }
+
+  /* gallery */
+
+  .single-pic-container {
+    right: 4.5vh;
+  }
+
+  .single-pic-container img {
+    height: 45vh;
+    max-width: 43vh;
+  }
+
+  .single-pic-container img:hover {
+    transform: none;
+  }
+
+  /* contacts */
+
+  #contacts .card-body {
+    font-size: 4vh;
+  }
+
+  #contacts .card-header h1 {
+    font-size: 4vh;
+  }
+
+  #contacts {
+    padding: 0.5vh;
+  }
+
+  #winecontacts {
+    padding: 0.5vh;
+  }
+
+  #winecontacts .card-header h1 {
+    font-size: 4vh;
+  }
+
+  #winecontacts .card-body {
+    font-size: 4vh;
+  }
+}
+
 @media screen and (max-width: 450px) {
   /* home page */
 
@@ -508,18 +713,15 @@ body {
   /* header */
 
   .header {
-    background: url(../images/header-mobile.jpg) center/cover fixed;
     height: 84vh;
     width: fit-content;
   }
 
   .vino-header {
-    background: url(../images/vino-header-mobile.jpg) center/cover fixed;
     height: 82vh;
   }
 
   .carne-header {
-    background: url(../images/carne-header-mobile.jpg) center/cover fixed;
     height: 82vh;
   }
 
@@ -528,7 +730,6 @@ body {
   }
 
   .formaggi-header {
-    background: url(../images/formaggi-header-mobile.jpg) center/cover fixed;
     height: 82vh;
   }
 
@@ -538,6 +739,10 @@ body {
   }
 
   /* meat */
+
+  .meat-starter h1 {
+    font-size: 6vh;
+  }
 
   .meat-container .card {
     height: fit-content;
@@ -678,23 +883,19 @@ body {
   /* header */
 
   .header {
-    background: url(../images/header-mobile.jpg) no-repeat center center fixed;
     height: 83vh;
     width: 100%;
   }
 
   .vino-header {
-    background: url(../images/vino-header-mobile.jpg) center/cover fixed;
     height: 77vh;
   }
 
   .carne-header {
-    background: url(../images/carne-header-mobile.jpg) center/cover fixed;
     height: 77vh;
   }
 
   .formaggi-header {
-    background: url(../images/formaggi-header-mobile.jpg) center/cover fixed;
     height: 77vh;
   }
 
@@ -713,6 +914,7 @@ body {
   .meat-container .card {
     height: fit-content;
     width: 50vh;
+    left: 0;
   }
 
   .meat-container img {
