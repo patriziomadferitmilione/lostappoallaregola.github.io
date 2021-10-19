@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,700;1,400;1,700;1,800&display=swap");
 
 :root {
   --primaryColor: #550a04;
   --primaryBlack: #020300;
-  --primaryWhite: #fff3b0;
+  --primaryWhite: #eef0f2;
   --primaryYellow: #e09f3e;
   --primaryBlue: #1d3354;
 }
@@ -233,35 +233,109 @@ body {
   color: var(--primaryYellow);
 }
 
-/* contacts */
+/* wine starter */
 
-#contacts {
-  background: linear-gradient(45deg, rgb(195, 66, 63), rgb(2, 3, 0));
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+.wine-starter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #1d3354, #200300);
+  color: #e09f3e;
 }
 
-#contacts .card {
-  background-color: var(--primaryWhite);
-  height: 50vh;
+.wine-starter h1 {
+  margin-bottom: 5vh;
+  font-size: 10vh;
+  font-style: italic;
 }
 
-#contacts .card-body {
+/* meat starter */
+
+.meat-starter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #550a04, #200300);
+  color: #e09f3e;
+}
+
+.meat-starter h1 {
+  margin-bottom: 5vh;
+  font-size: 10vh;
+  font-style: italic;
+}
+
+/* meat selection */
+
+.meat-container {
+  background: url(../images/original/carne/cooked-steak-2.jpeg) center/cover
+    fixed;
+}
+
+.meat-container .card {
+  height: 90vh;
+  background-color: #550a04;
+  opacity: 0.99;
+  border-radius: 5px;
+}
+
+.meat-container img {
+  max-width: 90vh;
+  max-height: 70vh;
+  border-radius: 5px;
+}
+
+.meat-container .card-body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 6vh;
+}
+
+.meat-text {
+  font-size: 7vh;
+  color: #e09f3e;
+}
+
+/* wine selection */
+
+.wine-container {
+  background: url(../images/original/vino/portrait-red.jpg) center/cover fixed;
+}
+
+.wine-container .card {
+  height: 90vh;
+  background-color: #1d3354;
+  opacity: 0.99;
+  border-radius: 5px;
+}
+
+.wine-container img {
+  max-width: 90vh;
+  max-height: 70vh;
+  border-radius: 5px;
+}
+
+.wine-container .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wine-text {
+  font-size: 8vh;
+  color: #e09f3e;
 }
 
 /* Gallery */
 
 .gallery {
-  background: linear-gradient(45deg, rgb(195, 66, 63), rgb(2, 3, 0));
+  background: radial-gradient(circle, #550a04, #200300);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding-right: 3vh;
+  padding-right: 5vh;
   overflow: hidden;
 }
 
@@ -292,10 +366,48 @@ body {
 
 /* End of Gallery */
 
+/* contacts */
+
+#contacts {
+  background: radial-gradient(circle, #550a04, #020300);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#winecontacts {
+  background: radial-gradient(circle, #1d3354, #200300);
+}
+
+#contacts .card {
+  background-color: var(--primaryWhite);
+  height: 50vh;
+}
+
+#winecontacts .card {
+  background-color: var(--primaryWhite);
+  height: 50vh;
+  color: #1d3354;
+}
+
+#contacts .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6vh;
+}
+
+#winecontacts .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6vh;
+}
+
 /* footer */
 
 #footer {
-  background-color: #fff3b0;
+  background-color: var(--primaryWhite);
   color: var(--primaryColor);
 }
 
@@ -315,8 +427,17 @@ body {
     padding-bottom: 10vh;
   }
 
+  .home-page-container .title-container {
+    margin-top: 12vh;
+  }
+
   .home-page-container .title-container img {
     width: 55vh;
+  }
+
+  .buttons-container .col {
+    margin-bottom: 1vh;
+    margin-top: 1vh;
   }
 
   .buttons-container button {
@@ -333,6 +454,8 @@ body {
   }
 
   /* full site */
+
+  /* navbar */
   .navbar {
     width: 100%;
   }
@@ -382,17 +505,19 @@ body {
     color: var(--primaryColor);
   }
 
+  /* header */
+
   .header {
-    height: 82vh;
+    height: 84vh;
     width: fit-content;
   }
 
   .vino-header {
-    height: 80vh;
+    height: 82vh;
   }
 
   .carne-header {
-    height: 77.4vh;
+    height: 82vh;
   }
 
   .header h1 {
@@ -400,7 +525,7 @@ body {
   }
 
   .formaggi-header {
-    height: 78vh;
+    height: 82vh;
   }
 
   .formaggi-header h1 {
@@ -408,9 +533,49 @@ body {
     height: fit-content;
   }
 
-  #contacts .card-body {
-    font-size: 5vh;
+  /* meat */
+
+  .meat-container .card {
+    height: fit-content;
+    width: 50vh;
+    left: 1vh;
   }
+
+  .meat-container img {
+    max-height: 40vh;
+    max-width: 45vh;
+  }
+
+  .meat-text {
+    font-size: 4vh;
+  }
+
+  /* wine */
+
+  .wine-starter h1 {
+    font-size: 7vh;
+  }
+
+  .wine-starter h5 {
+    font-size: 3vh;
+  }
+
+  .wine-container .card {
+    height: fit-content;
+    width: 50vh;
+    right: 3.5vh;
+  }
+
+  .wine-container img {
+    max-height: 40vh;
+    max-width: 45vh;
+  }
+
+  .wine-text {
+    font-size: 4vh;
+  }
+
+  /* gallery */
 
   .gallery {
     width: fit-content;
@@ -427,6 +592,24 @@ body {
 
   .single-pic-container img:hover {
     transform: none;
+  }
+
+  /* contacts */
+
+  #contacts .card-body {
+    font-size: 4vh;
+  }
+
+  #contacts {
+    padding: 3vh;
+  }
+
+  #winecontacts {
+    padding: 3vh;
+  }
+
+  #winecontacts .card-body {
+    font-size: 4vh;
   }
 }
 
@@ -457,6 +640,8 @@ body {
   }
 
   /* full site */
+
+  /* navbar */
   #navbar-icon-home {
     font-size: 5vh;
     color: var(--primaryColor);
@@ -486,6 +671,8 @@ body {
     color: var(--primaryColor);
   }
 
+  /* header */
+
   .header {
     background: url(../images/header-mobile.jpg) no-repeat center center fixed;
     height: 83vh;
@@ -509,14 +696,73 @@ body {
     height: fit-content;
   }
 
+  /* meat */
+
+  .meat-starter h1 {
+    margin-top: 3vh;
+    font-size: 4.8vh;
+  }
+
+  .meat-container .card {
+    height: fit-content;
+    width: 50vh;
+  }
+
+  .meat-container img {
+    max-height: 40vh;
+    max-width: 45vh;
+  }
+
+  .meat-text {
+    font-size: 4vh;
+  }
+
+  /* wine */
+
+  .wine-starter h1 {
+    font-size: 7vh;
+  }
+
+  .wine-starter h5 {
+    font-size: 3vh;
+  }
+
+  .wine-container .card {
+    height: 55vh;
+    width: 50vh;
+    right: 7vh;
+  }
+
+  .wine-container img {
+    max-height: 40vh;
+    max-width: 45vh;
+  }
+
+  .wine-text {
+    font-size: 4vh;
+  }
+
+  /* contacts */
+
   #contacts .card {
     margin-top: 1vh;
     margin-bottom: 1vh;
   }
 
   #contacts .card-body {
-    font-size: 4vh;
+    font-size: 3.5vh;
   }
+
+  #winecontacts .card {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+
+  #winecontacts .card-body {
+    font-size: 3.5vh;
+  }
+
+  /* gallery */
 
   .gallery {
     width: 100%;
