@@ -514,10 +514,12 @@ body {
   }
 
   .vino-header {
+    background: url(../images/vino-header-mobile.jpg) center/cover fixed;
     height: 82vh;
   }
 
   .carne-header {
+    background: url(../images/carne-header-mobile.jpg) center/cover fixed;
     height: 82vh;
   }
 
@@ -526,6 +528,7 @@ body {
   }
 
   .formaggi-header {
+    background: url(../images/formaggi-header-mobile.jpg) center/cover fixed;
     height: 82vh;
   }
 
@@ -681,14 +684,17 @@ body {
   }
 
   .vino-header {
+    background: url(../images/vino-header-mobile.jpg) center/cover fixed;
     height: 77vh;
   }
 
   .carne-header {
+    background: url(../images/carne-header-mobile.jpg) center/cover fixed;
     height: 77vh;
   }
 
   .formaggi-header {
+    background: url(../images/formaggi-header-mobile.jpg) center/cover fixed;
     height: 77vh;
   }
 
