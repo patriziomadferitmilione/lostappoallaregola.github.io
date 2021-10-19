@@ -615,7 +615,7 @@ body {
   /* contacts */
 
   #contacts .card-body {
-    font-size: 4vh;
+    font-size: 3.5vh;
   }
 
   #contacts .card-header h1 {
@@ -635,7 +635,7 @@ body {
   }
 
   #winecontacts .card-body {
-    font-size: 4vh;
+    font-size: 3.5vh;
   }
 }
 
