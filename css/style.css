@@ -745,15 +745,17 @@ body {
   /* header */
 
   .header {
+    background: url(../images/header-mobile.jpg) center/cover fixed;
     height: 84vh;
-    width: fit-content;
   }
 
   .vino-header {
+    background: url(../images/vino-header-mobile.jpg) center/cover fixed;
     height: 82vh;
   }
 
   .carne-header {
+    background: url(../images/carne-header-mobile.jpg) center/cover fixed;
     height: 82vh;
   }
 
@@ -762,6 +764,7 @@ body {
   }
 
   .formaggi-header {
+    background: url(../images/formaggi-header-mobile.jpg) center/cover fixed;
     height: 82vh;
   }
 
@@ -931,19 +934,23 @@ body {
   /* header */
 
   .header {
+    background: url(../images/header-mobile.jpg) center/cover fixed;
     height: 83vh;
     width: 100%;
   }
 
   .vino-header {
+    background: url(../images/vino-header-mobile.jpg) center/cover fixed;
     height: 77vh;
   }
 
   .carne-header {
+    background: url(../images/carne-header-mobile.jpg) center/cover fixed;
     height: 77vh;
   }
 
   .formaggi-header {
+    background: url(../images/formaggi-header-mobile.jpg) center/cover fixed;
     height: 77vh;
   }
 
