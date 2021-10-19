@@ -457,6 +457,22 @@ body {
     width: 40vh;
   }
 
+  .buttons-container #btn-1:hover {
+    transform: none;
+  }
+
+  .buttons-container #btn-2:hover {
+    transform: none;
+  }
+
+  .buttons-container #btn-3:hover {
+    transform: none;
+  }
+
+  .buttons-container #btn-4:hover {
+    transform: none;
+  }
+
   /* full site */
 
   /* navbar  */
@@ -658,6 +674,22 @@ body {
     width: 40vh;
   }
 
+  .buttons-container #btn-1:hover {
+    transform: none;
+  }
+
+  .buttons-container #btn-2:hover {
+    transform: none;
+  }
+
+  .buttons-container #btn-3:hover {
+    transform: none;
+  }
+
+  .buttons-container #btn-4:hover {
+    transform: none;
+  }
+
   /* full site */
 
   /* navbar */
@@ -846,6 +878,22 @@ body {
 
   .buttons-container #btn-3 {
     width: 40vh;
+  }
+
+  .buttons-container #btn-1:hover {
+    transform: none;
+  }
+
+  .buttons-container #btn-2:hover {
+    transform: none;
+  }
+
+  .buttons-container #btn-3:hover {
+    transform: none;
+  }
+
+  .buttons-container #btn-4:hover {
+    transform: none;
   }
 
   /* full site */
