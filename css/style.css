@@ -602,6 +602,7 @@ body {
     height: fit-content;
     width: 40vh;
     border-radius: 5px;
+    right: 1vh;
   }
 
   .wine-container img {
@@ -802,7 +803,7 @@ body {
   .meat-container .card {
     height: fit-content;
     width: 50vh;
-    left: 2vh;
+    left: 3vh;
   }
 
   .meat-container img {
@@ -1018,7 +1019,7 @@ body {
   .wine-container .card {
     height: 55vh;
     width: 50vh;
-    right: 7vh;
+    right: 5vh;
   }
 
   .wine-container img {
