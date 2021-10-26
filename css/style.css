@@ -6,6 +6,7 @@
   --primaryWhite: #eef0f2;
   --primaryYellow: #e09f3e;
   --primaryBlue: #1d3354;
+  --primaryPink: #82204a;
 }
 
 body {
@@ -15,7 +16,6 @@ body {
 /* HOME PAGE */
 
 .home-page-container {
-  height: 100vh;
   width: 100%;
   background: url(../images/home-page.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -85,6 +85,16 @@ body {
   border: 7px solid var(--primaryBlue);
 }
 
+.buttons-container #btn-5 {
+  width: 90vh;
+  border: 7px solid var(--primaryPink);
+}
+
+.buttons-container #btn-5 a {
+  color: var(--primaryPink);
+  text-decoration: none;
+}
+
 .buttons-container #btn-1:hover {
   background-color: var(--primaryBlack);
   transform: scale(1.1);
@@ -101,6 +111,11 @@ body {
 }
 
 .buttons-container #btn-4:hover {
+  background-color: var(--primaryBlack);
+  transform: scale(1.1);
+}
+
+.buttons-container #btn-5:hover {
   background-color: var(--primaryBlack);
   transform: scale(1.1);
 }
@@ -139,6 +154,11 @@ body {
 #navbar-icon-formaggi {
   font-size: 6vh;
   color: var(--primaryYellow);
+}
+
+#navbar-icon-distillati {
+  font-size: 6vh;
+  color: var(--primaryPink);
 }
 
 #navbarNav {
@@ -198,6 +218,17 @@ body {
   background-attachment: fixed;
 }
 
+.distillati-header {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/distillati.jpg) no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .header h1 {
   border: 7px solid var(--primaryWhite);
   font-size: 13vh;
@@ -231,6 +262,13 @@ body {
   font-size: 13vh;
   font-weight: 700;
   color: var(--primaryYellow);
+}
+
+.distillati-header h1 {
+  border: 7px solid var(--primaryPink);
+  font-size: 13vh;
+  font-weight: 700;
+  color: var(--primaryPink);
 }
 
 /* full site starter */
@@ -378,6 +416,23 @@ body {
 
 /* End of Gallery */
 
+/* reviews */
+
+#reviews {
+  background: radial-gradient(circle, #020300, #550a04);
+}
+
+.review-item {
+  background: var(--primaryWhite);
+  clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
+}
+
+.review-img {
+  width: 150px;
+}
+
+/* end of reviews */
+
 /* contacts */
 
 #contacts {
@@ -432,13 +487,13 @@ body {
 
 @media screen and (max-width: 720px) {
   .home-page-container {
-    height: 100vh;
     width: 100%;
     overflow: hidden;
   }
 
   .home-page-container .title-container img {
-    width: 43vh;
+    margin-top: 3vh;
+    width: 40vh;
   }
 
   .home-page-container .title-container {
@@ -469,6 +524,14 @@ body {
     width: 40vh;
   }
 
+  .buttons-container #btn-5 {
+    width: 40vh;
+  }
+
+  .buttons-container #btn-5 a {
+    font-size: 6vh;
+  }
+
   .buttons-container #btn-1:hover {
     transform: none;
   }
@@ -482,6 +545,10 @@ body {
   }
 
   .buttons-container #btn-4:hover {
+    transform: none;
+  }
+
+  .buttons-container #btn-5:hover {
     transform: none;
   }
 
@@ -505,6 +572,10 @@ body {
     font-size: 4vh;
   }
 
+  #navbar-icon-distillati {
+    font-size: 4vh;
+  }
+
   .home-brand img {
     width: 43vh;
   }
@@ -518,6 +589,10 @@ body {
   }
 
   .formaggi-brand img {
+    width: 43vh;
+  }
+
+  .distillati-brand img {
     width: 43vh;
   }
 
@@ -563,6 +638,14 @@ body {
 
   .full-site-starter h1 {
     font-size: 4vh;
+  }
+
+  .distillati-header {
+    height: 87vh;
+  }
+
+  .distillati-header h1 {
+    font-size: 7vh;
   }
 
   /* meat */
@@ -660,8 +743,7 @@ body {
   /* home page */
 
   .home-page-container {
-    height: 100vh;
-    overflow: hidden;
+    height: auto;
     padding-bottom: 10vh;
   }
 
@@ -734,20 +816,28 @@ body {
     color: var(--primaryYellow);
   }
 
+  #navbar-icon-distillati {
+    font-size: 4vh;
+  }
+
   .home-brand img {
-    width: 48vh;
+    width: 53vh;
   }
 
   .vino-brand img {
-    width: 50vh;
+    width: 53vh;
   }
 
   .carne-brand img {
-    width: 50vh;
+    width: 53vh;
   }
 
   .formaggi-brand img {
-    width: 50vh;
+    width: 53vh;
+  }
+
+  .distillati-brand img {
+    width: 53vh;
   }
 
   #navbarNav {
@@ -762,27 +852,15 @@ body {
   /* header */
 
   .header {
-    background: url(../images/header-mobile.jpg);
     height: 84vh;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   .vino-header {
-    background: url(../images/vino-header-mobile.jpg);
     height: 82vh;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   .carne-header {
-    background: url(../images/carne-header-mobile.jpg);
     height: 82vh;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   .header h1 {
@@ -790,11 +868,7 @@ body {
   }
 
   .formaggi-header {
-    background: url(../images/formaggi-header-mobile.jpg);
     height: 82vh;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   .formaggi-header h1 {
@@ -894,8 +968,7 @@ body {
   /* home page */
 
   .home-page-container {
-    height: 100vh;
-    overflow: hidden;
+    height: auto;
     padding-bottom: 10vh;
   }
 
@@ -953,6 +1026,14 @@ body {
   #navbar-icon-formaggi {
     font-size: 5vh;
     color: var(--primaryYellow);
+  }
+
+  #navbar-icon-distillati {
+    font-size: 5vh;
+  }
+
+  .distillati-brand img {
+    width: 51vh;
   }
 
   #navbarNav {
